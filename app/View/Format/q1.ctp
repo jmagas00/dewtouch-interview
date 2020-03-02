@@ -2,7 +2,7 @@
 <div id="message1">
 
 
-<?php echo $this->Form->create('Type',array('id'=>'form_type','type'=>'file','class'=>'','method'=>'POST', 'action' => '/Format/q1_result' ,'autocomplete'=>'off','inputDefaults'=>array(
+<?php echo $this->Form->create('Type',array('id'=>'form_type','type'=>'file','class'=>'','method'=>'POST', 'action'=>'q1_result', 'autocomplete'=>'off','inputDefaults'=>array(
 				
 				'label'=>false,'div'=>false,'type'=>'text','required'=>false)))?>
 	

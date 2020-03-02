@@ -8,9 +8,11 @@
 			
 		<div class="row-fluid view_info">
 			<div class="span12 ">
-				<?php echo __("Part 1 : You receive a customer request to change pop up to mouse over. Example needed as below:")?>
+				<?php echo __("You chose: ")?>
 				
-				<?php echo __("Part 2: Once mouse over is done, please add a 'Save' button which will go to a new page to show selection result.")?>
+				<?php foreach ($typeChoice as $choice) ?>
+
+				<?php echo __($choice['type'])?>
 			</div>
 			
 		</div>
