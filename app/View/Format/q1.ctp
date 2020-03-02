@@ -2,7 +2,7 @@
 <div id="message1">
 
 
-<?php echo $this->Form->create('Type',array('id'=>'form_type','type'=>'file','class'=>'','method'=>'POST','autocomplete'=>'off','inputDefaults'=>array(
+<?php echo $this->Form->create('Type',array('id'=>'form_type','type'=>'file','class'=>'','method'=>'POST', 'action'=>'q1_result', 'autocomplete'=>'off','inputDefaults'=>array(
 				
 				'label'=>false,'div'=>false,'type'=>'text','required'=>false)))?>
 	
@@ -22,6 +22,7 @@
 
 <?php echo $this->Form->input('type', array('legend'=>false, 'type' => 'radio', 'options'=>$options_new,'before'=>'<label class="radio line notcheck">','after'=>'</label>' ,'separator'=>'</label><label class="radio line notcheck">'));?>
 
+<?php echo $this->Form->Submit('save') ?>
 
 <?php echo $this->Form->end();?>
 
@@ -54,13 +55,12 @@ $(document).ready(function(){
 	$(".dialog").dialog({
 		autoOpen: false,
 		width: '500px',
-		modal: true,
+		// modal: true,
 		dialogClass: 'ui-dialog-blue'
 	});
 
-	
-	$(".showDialog").click(function(){ var id = $(this).data('id'); $("#"+id).dialog('open'); });
-
+	$(".showDialog").mouseover(function(){ var id = $(this).data('id'); $("#"+id).dialog('open'); });
+	$(".showDialog").mouseout(function(){ var id = $(this).data('id'); $("#"+id).dialog('close'); });
 })
 
 

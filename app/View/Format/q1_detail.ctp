@@ -11,8 +11,8 @@
 				<?php echo __("Part 1 : You receive a customer request to change pop up to mouse over. Example needed as below:")?>
 				<br/>
 				<br/>
-				
-				<img src="/files/screenshot/screenshot1.png" style="height: 150px" alt="">
+				<!-- image not showing; added "../" to src-->
+				<img src="../files/screenshot/screenshot1.png" style="height: 150px" alt="">
 				
 				<br/>
 				<br/>
