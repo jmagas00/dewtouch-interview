@@ -51,7 +51,8 @@ Video Instruction</div>
 
 <p style="text-align:left;">
 <video width="78%"   controls>
-  <source src="/video/q3_2.mov">
+	<!-- added "../" -->
+  <source src="../video/q3_2.mov">
 Your browser does not support the video tag.
 </video>
 </p>
